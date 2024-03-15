@@ -1,0 +1,62 @@
+import java.lang.Math;
+public class points {
+
+//adds points to a customer's account
+
+    public boolean addPoints(member memberIn, int addedPoints){
+        int newTotal = memberIn.getTotalPoints() + addedPoints;
+        memberIn.setTotalPoints(newTotal);
+        return true;
+        //we will need to add connection to the database which will update the count in the backend
+    }
+
+//removes points from a customer's account
+
+    public boolean removePoints(member memberIn, int toRemove){
+        if(toRemove > memberIn.getTotalPoints()){
+            System.out.println("Error: Not enough points to redeem");
+            return false;
+        }
+        else{
+            int newTotal = memberIn.getTotalPoints() - toRemove;
+            memberIn.setTotalPoints(newTotal);
+            return true;
+        //we will need to add connection to the database which will update the count in the backend
+           }  
+    }
+
+//allows the user to redeem points in the increments of 600,1000,1400 and 1800
+
+    public int redeemPoints(member memberIn, int toRedeem){
+        if(toRedeem == 600){
+            removePoints(memberIn, 600);
+            return memberIn.getTotalPoints();
+        }
+        else if (toRedeem == 1000){
+            removePoints(memberIn, 1000);
+            return memberIn.getTotalPoints();
+
+        }
+        else if (toRedeem == 1400){
+            removePoints(memberIn, 1400);
+            return memberIn.getTotalPoints();
+
+        }
+        else if (toRedeem ==1800){
+            removePoints(memberIn, 1800);
+            return memberIn.getTotalPoints();
+
+        }
+        else{
+            System.out.println("Error: You can only redeem points in increments of 600 ,1000 ,1400 and 1800");
+            return 0; 
+        }
+    }
+
+// Calculate how many points you earn for each purchase, rounded down.
+
+    public int calcPoints(int dollarsSpent){
+        int pointsGained = Math.round(dollarsSpent *10);
+        return pointsGained;
+    }
+}

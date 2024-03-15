@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class purchasing{
+    Book[] allPurchases; 
+
+    public void buyBook(Book bookIn){
+        //check inventory to see if the book is available
+        // if so, - call removeBook()
+        //        - call calcPoints()
+        //        - call addPoints()
+        // if not - System.out.println("Book out of stock")
+    }
+
+    public void createMember(String nameIn){
+        Scanner in = new Scanner(System.in);
+        String customerName = in.nextLine();
+        String customerEmail = in.nextLine();
+        String customerPhoneNum = in.nextLine();
+        nameIn = (0,customerName, customerEmail, customerPhoneNum);
+    }
+}

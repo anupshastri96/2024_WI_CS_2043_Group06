@@ -1,0 +1,50 @@
+//(WIP) book class for creating book objects
+
+public class book{
+
+
+  private int bookID;
+  private int isbn;
+  private int authorID;
+  private int typeID;
+  private String name;
+  private double basePrice;
+  //class variables(?)
+ 
+
+  public class book(int bookIDin, int isbnin, authorin, typein, namein, basePricein){
+    this.bookID = bookIDin;
+    this.isbn = isbnin;
+    this.authorID = authorIDin;
+    this.typeID = typein;
+    this.name = namein;
+    this.basePrice = basePricein;
+
+  }
+
+  public int getBookId(){
+    return bookID;
+  }
+
+  public int getISBN(){
+    return ISBN;
+  }
+
+  public int getAuthorID(){
+    return authorID;
+  }
+
+  public int getTypeID(){
+    return typeID;
+  }
+
+  public String getName(){
+    return name;
+  }
+
+  public double getBasePrice(){
+    return basePrice;
+  }
+
+
+}

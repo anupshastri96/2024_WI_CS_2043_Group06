@@ -1,0 +1,25 @@
+//(WIP) This class is for the store inventory
+
+public class inventory{
+
+  //class variables(?)
+
+
+  public void addBook(book book){
+   
+    //code to add book to database
+    //add to count how many are in database 
+  }
+
+  public void removeBook(book book){
+
+    //remove book that customer has bought
+    //minus 1+ to count in database
+  }
+
+  public String searchInventory(book book){
+
+    //search through inventory for specific book
+    //return string to confirm or deny whether or not the book is available 
+  }
+}

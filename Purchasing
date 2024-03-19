@@ -1,48 +1,7 @@
 import java.util.Scanner;
 public class purchasing{
     Book[] allPurchases;
-        Scanner in = new Scanner(System.in);
-            System.out.println("    1: Purchase Book");
-            System.out.println("    2: Add new member");
-            System.out.println("    3: Get Reciept");
-            System.out.println("    4: Mass add to inventory);
-            System.out.println("    5: Mass remove from inventory);
-            System.out.println("    0: Quit Program);
-            System.out.println("Select a command: ");
-            int userInput = in.nextInt();
-
-        while userInput != 0{
-            if in.nextInt() = 1{
-            //call the functions for a customer to purchase a book
-
-            }
-
-            else if in.nextInt() = 2{
-            //call the functions to create a new member
-
-            }
-
-            else if in.nextInt() = 3{
-            //call the functions to print the reciepts
-
-            }
-
-            else if in.nextInt() = 4{
-            //call the functions to mass add to the database
-
-            }
-
-            else if in.nextInt() = 5{
-            //call the functions to mass remove from the database
-            }
-
-            else{
-                System.out.println("Incorrect input: Please try again");
-            }
-            System.out.println("Select a command: ");
-            userInput = in.nextInt();
-        }
-
+    
     public void buyBook(Book bookIn){
 
         //check inventory to see if the book is available

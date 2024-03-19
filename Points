@@ -1,3 +1,5 @@
+(WIP) This program handles the use cases around the Points System
+
 import java.lang.Math;
 public class points {
 

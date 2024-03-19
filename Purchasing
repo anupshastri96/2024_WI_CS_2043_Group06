@@ -13,18 +13,28 @@ public class purchasing{
 
         while userInput != 0{
             if in.nextInt() = 1{
+            //call the functions for a customer to purchase a book
+
             }
 
             else if in.nextInt() = 2{
+            //call the functions for a customer  to return a book
+
             }
 
             else if in.nextInt() = 3{
+            //call the functions to create a new member
+
             }
 
             else if in.nextInt() = 4{
+            //call the functions to print the reciepts
+
             }
 
             else if in.nextInt() = 5{
+            //call the functions to mass add to the database
+
             }
             else{
                 System.out.println("Incorrect input: Please try again");

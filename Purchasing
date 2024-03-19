@@ -5,7 +5,8 @@ public class purchasing{
             System.out.println("    1: Purchase Book");
             System.out.println("    2: Add new member");
             System.out.println("    3: Get Reciept");
-            System.out.println("    4: Add to Inventory);
+            System.out.println("    4: Mass add to inventory);
+            System.out.println("    5: Mass remove from inventory);
             System.out.println("    0: Quit Program);
             System.out.println("Select a command: ");
             int userInput = in.nextInt();
@@ -30,6 +31,11 @@ public class purchasing{
             //call the functions to mass add to the database
 
             }
+
+            else if in.nextInt() = 5{
+            //call the functions to mass remove from the database
+            }
+
             else{
                 System.out.println("Incorrect input: Please try again");
             }

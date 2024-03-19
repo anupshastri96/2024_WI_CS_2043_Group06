@@ -33,6 +33,8 @@ public class purchasing{
             else{
                 System.out.println("Incorrect input: Please try again");
             }
+            System.out.println("Select a command: ");
+            userInput = in.nextInt();
         }
 
     public void buyBook(Book bookIn){

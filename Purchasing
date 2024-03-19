@@ -1,8 +1,38 @@
 import java.util.Scanner;
 public class purchasing{
-    Book[] allPurchases; 
+    Book[] allPurchases;
+        Scanner in = new Scanner(System.in);
+            System.out.println("    1: Purchase Book");
+            System.out.println("    2: Return Book");
+            System.out.println("    3: Add new member");
+            System.out.println("    4: Get Reciept");
+            System.out.println("    5: Add to Inventory);
+            System.out.println("    0: Quit Program);
+            System.out.println("Select a command: ");
+            int userInput = in.nextInt();
+
+        while userInput != 0{
+            if in.nextInt() = 1{
+            }
+
+            else if in.nextInt() = 2{
+            }
+
+            else if in.nextInt() = 3{
+            }
+
+            else if in.nextInt() = 4{
+            }
+
+            else if in.nextInt() = 5{
+            }
+            else{
+                System.out.println("Incorrect input: Please try again");
+            }
+        }
 
     public void buyBook(Book bookIn){
+
         //check inventory to see if the book is available
         // if so, - call removeBook()
         //        - call calcPoints()
@@ -11,7 +41,6 @@ public class purchasing{
     }
 
     public void createMember(){
-        Scanner in = new Scanner(System.in);
         System.out.println("Enter Customer's Name");
         String customerName = in.nextLine();
         System.out.println("Enter Customer's Email);
@@ -19,6 +48,6 @@ public class purchasing{
         System.out.println("Enter Customer's Phone Number);
         String customerPhoneNum = in.nextLine();
         member member1 = new member(0,customerName, customerEmail, customerPhoneNum);
-        in.close();
+
     }
 }

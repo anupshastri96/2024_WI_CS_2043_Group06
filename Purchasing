@@ -18,6 +18,7 @@ public class purchasing{
         String customerEmail = in.nextLine();
         System.out.println("Enter Customer's Phone Number);
         String customerPhoneNum = in.nextLine();
-        
+        member member1 = new member(0,customerName, customerEmail, customerPhoneNum);
+        in.close();
     }
 }

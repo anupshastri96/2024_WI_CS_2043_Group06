@@ -1,3 +1,5 @@
+// (WIP) This program handles all use cases around reciepts
+
 import java.io.File; 
 import java.io.IOException;  
 

@@ -2,7 +2,7 @@
 // For the time being, I wrote a text interface we can use before we get the GUI working
 
 import java.util.Scanner;
-public class purchasing{
+public class driver{
     Book[] allPurchases;
         Scanner in = new Scanner(System.in);
             System.out.println("    1: Purchase Book");

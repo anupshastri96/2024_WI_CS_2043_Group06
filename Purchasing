@@ -10,11 +10,14 @@ public class purchasing{
         // if not - System.out.println("Book out of stock")
     }
 
-    public void createMember(String nameIn){
+    public void createMember(){
         Scanner in = new Scanner(System.in);
+        System.out.println("Enter Customer's Name");
         String customerName = in.nextLine();
+        System.out.println("Enter Customer's Email);
         String customerEmail = in.nextLine();
+        System.out.println("Enter Customer's Phone Number);
         String customerPhoneNum = in.nextLine();
-        nameIn = (0,customerName, customerEmail, customerPhoneNum);
+        
     }
 }

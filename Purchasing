@@ -47,6 +47,7 @@ public class purchasing{
         // if so, - call removeBook()
         //        - call calcPoints()
         //        - call addPoints()
+        //        - option to redeem points
         // if not - System.out.println("Book out of stock")
     }
 

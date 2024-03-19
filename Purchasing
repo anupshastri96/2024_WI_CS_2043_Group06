@@ -1,3 +1,5 @@
+//(WIP) This program handles the use cases coming from the POV of a employee handling check outs
+
 import java.util.Scanner;
 public class purchasing{
     Book[] allPurchases;

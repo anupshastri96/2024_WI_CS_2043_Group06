@@ -1,0 +1,41 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class createMember{
+      public static void main(String[] args) throws SQLException{
+        int points = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("\nEnter the name of the member: ");
+        String memberName = scan.nextLine();
+        System.out.print("\nEnter the member's email: );
+        String memberEmail = scan.nextLine();
+        System.out.print("\nEnter the member's phone number: ");
+        String memberPhoneNum = scan.nextLine();
+
+        Connection connector = DriverManager.getConnection
+              ("jdbc:mysql://cs1103.cs.unb.ca:3306/dbname",  // Database URL
+               "userid",   // MySQL username
+               "ABCDEF");  // MySQL password
+
+// Create the executable SQL statement here, just need to wait to see the tables and stuff
+        String insert = "insert into ??? values (?,?,?);";
+        PreparedStatement insertStatement = connector.prepareStatement(insert);
+        insertStatement.setString(1, memberName);
+        insertStatement.setString(2, memberEmail);
+        insertStatement.setString(3, nemberPhoneNum);
+
+        int affectedRows = insertStatement.executeUpdate();
+              if (affectedRows == 0){
+                  System.out.println("\nInsertion failed\n");
+             }
+              else{
+                  System.out.println("\nInsertion succeeded\n");
+             }
+      }
+catch (SQLException e){
+      System.out.println("SQL error: ");
+        }
+}

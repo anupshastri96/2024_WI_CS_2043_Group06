@@ -7,7 +7,7 @@ public class driver{
         Scanner in = new Scanner(System.in);
             System.out.println("    1: Purchase Book");
             System.out.println("    2: Add new member");
-            System.out.println("    3: Get Reciept");
+            System.out.println("    3: Print Reciept");
             System.out.println("    4: Remove book from inventory); // removing the book so it can no longer be sold
             System.out.println("    5: Add new book to inventory); // creating a new book to be sold, not adding on indivual book to the inventory
             System.out.println("    6: Search by ID:");
@@ -32,12 +32,16 @@ public class driver{
             }
 
             else if in.nextInt() = 4{
-            //call the functions to mass add to the database
+            //call the functions to remove a book so it can no longer be sold
 
             }
 
             else if in.nextInt() = 5{
-            //call the functions to mass remove from the database
+            //call the functions to create a new book to be sold
+            }
+
+            else if in.nextInt() = 6{
+            //call search by the ID number
             }
 
             else{

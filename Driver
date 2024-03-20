@@ -8,9 +8,9 @@ public class driver{
             System.out.println("    1: Purchase Book");
             System.out.println("    2: Add new member");
             System.out.println("    3: Get Reciept");
-            System.out.println("    4: Mass add existing books to inventory);
-            System.out.println("    5: Mass remove from inventory);
-            System.out.println("    6: Add new book to inventory);
+            System.out.println("    4: Remove book from inventory); // removing the book so it can no longer be sold
+            System.out.println("    5: Add new book to inventory); // creating a new book to be sold, not adding on indivual book to the inventory
+            System.out.println("    6: Search by ID:");
             System.out.println("    0: Quit Program);
             System.out.println("Select a command: ");
             int userInput = in.nextInt();

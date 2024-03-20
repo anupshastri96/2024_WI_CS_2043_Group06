@@ -23,9 +23,10 @@ public class createMember{
 // Create the executable SQL statement here, just need to wait to see the tables and stuff
         String insert = "insert into ??? values (?,?,?);";
         PreparedStatement insertStatement = connector.prepareStatement(insert);
-        insertStatement.setString(1, memberName);
-        insertStatement.setString(2, memberEmail);
-        insertStatement.setString(3, nemberPhoneNum);
+        insertStatement.setInt(1, points);
+        insertStatement.setString(2, memberName);
+        insertStatement.setString(3, memberEmail);
+        insertStatement.setString(4, nemberPhoneNum);
 
         int affectedRows = insertStatement.executeUpdate();
               if (affectedRows == 0){

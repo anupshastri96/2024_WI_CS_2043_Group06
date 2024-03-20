@@ -1,4 +1,4 @@
-// (WIP) I'm not sure where the JDBC functions will go so I am making a temp area, which is this file
+// (WIP) I'm not sure where the JDBC functions will go so I am making this file
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class addBook{
         Scanner scan = new Scanner(System.in);
 
         System.out.print("\nEnter the author's name: ");
-        String authorName = scan.nextLine();
+        String author = scan.nextLine();
         System.out.print("\nEnter the type of book: ");
         String bookType = scan.nextLine();
         System.out.print("\nEnter the title: );
@@ -25,13 +25,17 @@ public class addBook{
                "ABCDEF");  // MySQL password
 
 // Create the executable SQL statement here, just need to wait to see the tables and stuff
+        String insert = "insert into ??? values (?,?,?);";
+        PreparedStatement insertStatement = connector.prepareStatement(insert);
+        insertStatement.setString(1, author);
+        insertStatement.setString(2, bookType);
+        insertStatement.setString(3, title);
+        insertStatement.setDouble(4, price);
 
         int affectedRows = insertStatement.executeUpdate();
         if (affectedRows == 0)
             System.out.println("\nInsertion failed\n");
         else
             System.out.println("\nInsertion succeeded\n");
-
-        
       }
 }

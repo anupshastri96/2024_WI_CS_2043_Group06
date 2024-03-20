@@ -23,7 +23,7 @@ public class driver{
 
             else if in.nextInt() = 2{
             //call the functions to create a new member
-
+            //JDBC - createMember
             }
 
             else if in.nextInt() = 3{
@@ -38,6 +38,7 @@ public class driver{
 
             else if in.nextInt() = 5{
             //call the functions to create a new book to be sold
+            //JDBC - addBook
             }
 
             else if in.nextInt() = 6{

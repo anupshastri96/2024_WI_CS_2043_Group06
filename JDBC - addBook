@@ -33,9 +33,14 @@ public class addBook{
         insertStatement.setDouble(4, price);
 
         int affectedRows = insertStatement.executeUpdate();
-        if (affectedRows == 0)
-            System.out.println("\nInsertion failed\n");
-        else
-            System.out.println("\nInsertion succeeded\n");
+              if (affectedRows == 0){
+                  System.out.println("\nInsertion failed\n");
+             }
+              else{
+                  System.out.println("\nInsertion succeeded\n");
+             }
       }
+catch (SQLException e){
+      System.out.println("SQL error: ");
+        }
 }

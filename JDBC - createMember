@@ -21,7 +21,7 @@ public class createMember{
                "ABCDEF");  // MySQL password
 
 // Create the executable SQL statement here, just need to wait to see the tables and stuff
-        String insert = "insert into ??? values (?,?,?);";
+        String insert = "insert into Customers (name, email, phone) values ('memberName, 'memberEmail', 'memberPhoneNum');";
         PreparedStatement insertStatement = connector.prepareStatement(insert);
         insertStatement.setInt(1, points);
         insertStatement.setString(2, memberName);

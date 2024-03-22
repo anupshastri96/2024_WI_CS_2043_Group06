@@ -6,20 +6,29 @@ public class inventory{
 
 
   public void addBook(book book){
-   
+    
+    //JDBC code goes here
+    //
     //code to add book to database
     //add to count how many are in database 
+    //
   }
 
   public void removeBook(book book){
 
-    //remove book that customer has bought
-    //minus 1+ to count in database
-  }
+    //JDBC code goes here
+    //
+    // remove book that customer has bought
+    // minus 1+ to count from database
+    //
+}
 
   public String searchInventory(book book){
 
+    //JDBC code goes here
+    //
     //search through inventory for specific book
     //return string to confirm or deny whether or not the book is available 
+    //
   }
 }

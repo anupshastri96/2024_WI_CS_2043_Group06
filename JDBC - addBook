@@ -25,7 +25,7 @@ public class addBook{
                "ABCDEF");  // MySQL password
 
 // Create the executable SQL statement here, just need to wait to see the tables and stuff
-        String insert = "insert into ??? values (?,?,?);";
+        String insert = "insert into Books (isbn, title, author_id, type_id, price) values (1234567890123, author', bookType, price);;";
         PreparedStatement insertStatement = connector.prepareStatement(insert);
         insertStatement.setString(1, author);
         insertStatement.setString(2, bookType);

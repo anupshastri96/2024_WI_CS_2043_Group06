@@ -204,7 +204,7 @@ public class PurchaseUI extends VBox {
     }
 
     private boolean checkBooksExist(Connection conn, String[] bookIdArray, String[] isbnArray) throws SQLException {
-        String query = "SELECT COUNT(*) AS count FROM Books WHERE book_id = ? OR isbn = ?";
+        String query = "SELECT COUNT(*) AS count FROM Books WHERE book_id = ? OR isbn = ? and purchased = false";
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
             for (int i = 0; i < bookIdArray.length; i++) {
                 int bookId = Integer.parseInt(bookIdArray[i]);
